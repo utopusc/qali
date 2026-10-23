@@ -1,0 +1,41 @@
+{
+  "name": "qali",
+  "version": "0.2.0",
+  "description": "AI-assisted web QA toolkit with beginner setup, reusable skills, and readable test reports",
+  "scripts": {
+    "start": "node bin/qali.mjs",
+    "test": "node scripts/verify.mjs",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:unit": "node --test tests/unit/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report artifacts/regression/html",
+    "demo:defect": "node scripts/demo-defect.mjs",
+    "verify": "node scripts/verify.mjs",
+    "qali": "node bin/qali.mjs",
+    "demo": "node demo/server.mjs",
+    "test:tool": "node --test tests/tool/*.test.mjs",
+    "test:example": "playwright test"
+  },
+  "keywords": [
+    "qa",
+    "testing",
+    "playwright",
+    "ai",
+    "skills"
+  ],
+  "author": "Bruce Oz",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "qali": "bin/qali.mjs"
+  }
+}

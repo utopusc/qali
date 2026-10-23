@@ -1,0 +1,4 @@
+interface:
+  display_name: "QaLi Triage"
+  short_description: "Explain failed checks using recorded evidence"
+  default_prompt: "Use $qali-triage to explain my latest failed QaLi run and suggest a focused next step."

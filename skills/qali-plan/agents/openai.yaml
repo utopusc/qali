@@ -1,0 +1,4 @@
+interface:
+  display_name: "QaLi Plan"
+  short_description: "Create reviewable checks for your own web app"
+  default_prompt: "Use $qali-plan to inspect my app and draft a focused QA plan."

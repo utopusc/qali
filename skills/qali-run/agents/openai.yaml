@@ -1,0 +1,4 @@
+interface:
+  display_name: "QaLi Run"
+  short_description: "Run reviewed web checks and explain the results"
+  default_prompt: "Use $qali-run to execute my reviewed QaLi plan and summarize the results."
